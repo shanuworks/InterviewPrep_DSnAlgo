@@ -4,7 +4,7 @@ public class SubsetSum {
     public static void main(String args[]) {
         int num[] = new int[]{2, 3, 7, 8, 10};
         int n = num.length;
-        int sum = 16;
+        int sum = 11;
         long start = System.currentTimeMillis();
         System.out.println("Subset exists : "+subsetExists(num, n, sum) );
         System.out.println("Total time taken : "+ (System.currentTimeMillis() - start) +" ms");

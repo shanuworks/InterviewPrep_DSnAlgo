@@ -3,7 +3,7 @@ import java.util.stream.IntStream;
 import java.util.Arrays;
 public class EqualSumPartition {
     public static void main(String args[]) {
-        int num[] = new int[]{1, 6, 11, 5};
+        int num[] = new int[]{1, 8, 11, 6};
         int n = num.length;
         int sum = IntStream.of(num).sum();
         //int sum1= Arrays.stream(num).sum();

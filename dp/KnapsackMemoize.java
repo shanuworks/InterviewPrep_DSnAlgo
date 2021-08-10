@@ -19,17 +19,12 @@ public class KnapsackMemoize {
     public static int maximizeProfit( int wt[], int val[], int w, int n) {
         if(w == 0 || n == 0)
             return 0;
-        if(wt[n-1] <= w ) {
-            if(t[n][w] != -1)
-                return t[n][w];
-            else {
-                t[n][w] = Math.max(val[n-1] + maximizeProfit(wt,val,w-wt[n-1],n-1), maximizeProfit(wt, val, w, n-1) );
-                return t[n][w];
-
-            }
-        } else {
-            t[n][w] = maximizeProfit(wt,val, w, n-1);
+        if(t[n][w] != -1)
             return t[n][w];
+        if(wt[n-1] <= w ) {
+            return t[n][w] = Math.max(val[n-1] + maximizeProfit(wt,val,w-wt[n-1],n-1), maximizeProfit(wt, val, w, n-1) );
+        } else {
+            return t[n][w] = maximizeProfit(wt,val, w, n-1);
         }
     }
 }

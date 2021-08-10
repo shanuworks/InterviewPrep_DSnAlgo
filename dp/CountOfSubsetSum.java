@@ -2,9 +2,9 @@ package com.google.dp;
 
 public class CountOfSubsetSum {
     public static void main(String args[]) {
-        int num[] = new int[]{2, 3, 5, 6, 8, 10};
+        int num[] = new int[]{3, 3, 3, 3};
         int n = num.length;
-        int sum = 10;
+        int sum = 6;
         long start = System.currentTimeMillis();
         System.out.println("Count of subsets with the given sum : "+countOfSubset(num, n, sum) );
         System.out.println("Total time taken : "+ (System.currentTimeMillis() - start) +" ms");
