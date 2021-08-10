@@ -27,8 +27,8 @@ public class KClosestToOrigin {
         }
     }
     public static void main( String args[]) {
-        int arr[][] = new int[][]{{1,3},{-2,2},{5,8},{0,1}};
-        int k = 2;
+        int arr[][] = new int[][]{{1,3},{-2,2}};
+        int k = 1;
         Object[] res = findKClosest(arr, k);
         System.out.print(" K Closest points to origin : ");
         for( Object num  : res) {
